@@ -1,0 +1,49 @@
+.d-container {
+  font-family: 'Courier New', Courier, monospace; /* Retro font */
+  @apply font-semibold;
+  background-color: #282c34;
+  color: #61dafb;
+  @apply px-5;
+  @apply py-2;
+  @apply rounded;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  @apply w-[450px];
+  @apply ml-auto;
+  @apply mb-5;
+
+  &__timer {
+    font-size: 2em;
+    letter-spacing: 2px;
+    @apply m-0;
+
+    div {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    span {
+      @apply mr-2;
+    }
+  }
+
+  &__labels {
+    font-size: 0.8em;
+    @apply flex;
+    @apply flex-row;
+    @apply justify-between;
+    span {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  &__blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+  }
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}

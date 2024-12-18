@@ -1,0 +1,15 @@
+{
+  "extends": ["next", "next/core-web-vitals"],
+  "globals": {
+    "React": "readonly"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "error",
+    "max-lines": ["warn", 500],
+    "no-undef": "error",
+    "no-empty": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/rules-of-hooks": "error"
+  }
+}

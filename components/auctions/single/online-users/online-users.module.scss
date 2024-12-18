@@ -1,0 +1,13 @@
+.online-user-card {
+  /* Your styling here */
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.online-users-container {
+  /* Container styling */
+  display: flex;
+  flex-wrap: wrap;
+}

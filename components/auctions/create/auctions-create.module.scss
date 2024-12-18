@@ -1,0 +1,17 @@
+.b-container {
+  &__create-auction-form {
+    &__row {
+      @apply grid;
+      @apply grid-cols-1;
+      @apply gap-2;
+      @apply mb-5;
+      @screen sm {
+        @apply grid-cols-6;
+      }
+    }
+    &__buttons-container {
+      @apply flex;
+      @apply justify-center;
+    }
+  }
+}

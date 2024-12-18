@@ -1,0 +1,19 @@
+.header {
+  @apply w-full;
+}
+
+.link {
+  @apply mr-5;
+}
+
+.link::before {
+  @apply absolute w-full h-[2px] rounded bg-white bottom-0 left-0 transition-transform duration-300 ease-in-out;
+  content: '';
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
